@@ -1,0 +1,33 @@
+name: "My Roomba 980"
+description: "Personnal Roomba MQTT Server"
+version: "0.0.2"
+slug: folder
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+options:
+  Roomba_IP: "192.168.0.99"
+  Roomba_UID: ""
+  Roomba_Password: ""
+  MQTT_IP: "192.168.0.109"
+  MQTT_PORT: 1883
+  MQTT_USER: ""
+  MQTT_PASSWORD: ""
+  ACCOUNT_LOGIN: ""
+  ACCOUNT_PASSWORD: ""
+schema:
+  Roomba_UID: str
+  Roomba_Password: str
+  Roomba_IP: str
+  MQTT_IP: str
+  MQTT_PORT: int
+  MQTT_USER: str
+  MQTT_PASSWORD: str
+  ACCOUNT_LOGIN: str
+  ACCOUNT_PASSWORD: password
+debug: bool?
+
