@@ -1,1 +1,1 @@
-# ha-mqtt-roomba
+# ha-addon-mqtt-roomba
