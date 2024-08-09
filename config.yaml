@@ -3,6 +3,7 @@ description: "Personnal Roomba MQTT Server"
 version: "0.0.2"
 slug: folder
 init: false
+image: "Elwinmage/image-{arch}-mqtt-roomba-addon"
 arch:
   - aarch64
   - amd64
