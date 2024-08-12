@@ -9,7 +9,6 @@ arch:
 - armhf
 - armv7
 - i386
-image: "Elwinmage/image-{arch}-mqtt-roomba-addon"
 host_network: true
 panel_title: My Roomba 980
 panel_admin: false
