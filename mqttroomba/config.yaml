@@ -1,8 +1,7 @@
 name: "My Roomba 980"
 description: "Personnal Roomba MQTT Server"
 version: "0.0.2"
-slug: folder
-init: false
+slug: my_roomba_980
 image: "Elwinmage/image-{arch}-mqtt-roomba-addon"
 arch:
   - aarch64
@@ -10,6 +9,10 @@ arch:
   - armhf
   - armv7
   - i386
+homeassistant_api: true
+init: false
+advanced: false
+stage: stable
 options:
   Roomba_IP: "192.168.0.99"
   Roomba_UID: ""
