@@ -1,14 +1,14 @@
 name: "My Roomba 980"
 description: "Personnal Roomba MQTT Server"
 version: "0.0.2"
-slug: my_roomba_980
-image: "Elwinmage/image-{arch}-mqtt-roomba-addon"
+slug: mqttroomba
 arch:
   - aarch64
   - amd64
   - armhf
   - armv7
   - i386
+image: "Elwinmage/image-{arch}-mqtt-roomba-addon"
 homeassistant_api: true
 init: false
 advanced: false
