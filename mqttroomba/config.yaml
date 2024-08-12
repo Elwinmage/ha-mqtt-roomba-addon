@@ -9,6 +9,7 @@ arch:
 - armhf
 - armv7
 - i386
+image: "Elwinmage/image-{arch}-mqtt-roomba-addon"
 host_network: true
 panel_title: My Roomba 980
 panel_admin: false
@@ -37,3 +38,4 @@ schema:
   MQTT_PASSWORD: str
   ACCOUNT_LOGIN: str
   ACCOUNT_PASSWORD: password
+debug: bool?
