@@ -32,7 +32,7 @@ for room in `IRBT_LOGIN=${ACCOUNT_LOGIN} IRBT_PASSWORD=${ACCOUNT_PASSWORD} irbt-
 do
     name=`echo $room|cut -d ':' -f 1`
     id=`echo $room|cut -d ':' -f 2|sed s/' '/''/g`
-    ROOMS="${ROOMS}{'name': \"$name\",'id': $id},"
+    ROOMS="${ROOMS}{\"name\": \"$name\",\"id\": $id},"
 done
 ROOMS="${ROOMS}]"
 IFS=${OLD_IFS}

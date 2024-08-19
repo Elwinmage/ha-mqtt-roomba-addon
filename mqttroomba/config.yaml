@@ -1,5 +1,5 @@
 name: My Roomba 980
-version: 0.1.0
+version: 0.1.1
 slug: mmqttroomba
 description: Roomba MQTT server based on Roomba980 python
 url: https://github.com/Elwinmage/ha-mqtt-roomba-addon
