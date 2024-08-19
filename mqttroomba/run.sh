@@ -34,7 +34,7 @@ do
     id=`echo $room|cut -d ':' -f 2|sed s/' '/''/g`
     ROOMS="${ROOMS}{\"name\": \"$name\",\"id\": $id},"
 done
-ROOMS="${ROOMS}]"
+ROOMS="${ROOMS::-1}]"
 IFS=${OLD_IFS}
 
 mosquitto_pub -r -h ${MQTT_IP} -p ${MQTT_PORT} -u ${MQTT_USER} -P "${MQTT_PASSWORD}" -t ${TOPIC} -m "${ROOMS}"
